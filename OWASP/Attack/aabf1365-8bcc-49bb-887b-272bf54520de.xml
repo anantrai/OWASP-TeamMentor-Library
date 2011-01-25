@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><guidanceItem id="aabf1365-8bcc-49bb-887b-272bf54520de" type="Attack" title="Statistical Analysis Attack" cssFile="guidance.css" Date="2008-09-03T12:18:12.733Z" Author="" Category="Sensitive Data" filePath="..\Libraries\OWASP\Attack\aabf1365-8bcc-49bb-887b-272bf54520de.xml" Priority="2" Rule_Type="Implementation" Source="SI" Status="" Technology=" Any" Topic="Security" Type="Attack" xmlns="urn:microsoft:guidanceexplorer:guidanceItem"><content><![CDATA[<BR><BR><H1 class=section>Applies To</H1>
+<P>Applications encrypting sensitive data.</P>
+<H1 class=section>Description</H1>
+<P>Given large sets of encrypted data an attacker may be able to discover sensitive data by comparing large sets of encrypted packets. An attacker will attempt to gather large amounts of packets to discern some information about a network or software system. The attacker may be able to do this by artificially injecting packets into the system to see how they are dealt with by the system or by passively listening to network traffic for interesting packets. </P>
+<H1 class=section>Impact</H1>
+<UL>
+<LI>Discovery of encryption keys (WEP Key Attack) 
+<LI>Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more 
+<LI>Unencrypted data – an attack listening to all encrypted e-mail would still recover all unencrypted header information such as to, from, cc, timestamp, subject, etc.</LI></UL>
+<H1 class=section>Vulnerabilities</H1>
+<UL>
+<LI>False sense of security when using encryption libraries</LI></UL>
+<H1 class=section>Countermeasures</H1>
+<UL>
+<LI>Always be sure you know what is and what is not being encrypted 
+<LI>Understand what bits of information can be discovered by analyzing packets or information being sent on the network 
+<LI>Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks</LI></UL>
+<H1 class=section>Additional Resources</H1>
+
+<H1 class=section>Related Items</H1><UL>
+	<LI> <A href="ruledisplay:3B657A67-F660-4DB5-9267-6E0FE2DAA1EB">Attack: Chosen Ciphertext Attack</A></LI>
+	<LI> <A href="ruledisplay:DEBB5734-39D0-4922-BDEE-1E0547E22DAD">Attack: Chosen Plaintext Attack</A></LI>
+	<LI> <A href="ruledisplay:6D0F24EA-B130-4AAE-9EDF-0B27F04B3145">Attack: Credentials Brute Force Attack</A></LI>
+	<LI> <A href="ruledisplay:A483E10E-2C4F-4947-863F-81CF93DD5FEA">Attack: Credentials Dictionary Attack</A></LI>
+	<LI> <A href="ruledisplay:24D078E3-A02F-4EDF-A6EA-DA0E3E5FFE5E">Attack: Key Bruteforce Attack</A></LI>
+	<LI> <A href="ruledisplay:4572037A-2166-4AD1-8E73-D623E468A7B9">Attack: Information Disclosure Attack</A></LI>
+	<LI> <A href="ruledisplay:C7E4A74A-9557-43E4-8560-AD3193E3B9EE">Attack: Session Prediction Attack</A></LI>
+	<LI> <A href="ruledisplay:13EE90D9-B0F6-45D6-913A-BA8527525A04">Attack: Traffic Analysis Attack</A></LI>
+	<LI> <A href="ruledisplay:58543D04-18B3-4F6E-BBEC-1FEDC89F0ED6">Attack: Weak Password Attack</A></LI>
+</UL>
+
+
+
+]]></content></guidanceItem>
